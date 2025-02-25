@@ -1,4 +1,5 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
 
 const NewPage = () => {
   const [firstName,setFirstName]=useState('');
@@ -33,7 +34,7 @@ function manageUser(){
 
     <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">lastName</label>
-    <input type="password" class="form-control" id="exampleInputPassword1"onChange={(e)=> setLastName(e.target.value)}value={lastNametName}/>
+    <input type="password" class="form-control" id="exampleInputPassword1"onChange={(e)=> setLastName(e.target.value)}value={lastName}/>
   </div>
 
   <div class="mb-3">
